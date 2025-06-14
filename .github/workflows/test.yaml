@@ -6,6 +6,9 @@ jobs:
   helloworld:
     runs-on: ubuntu-latest
     steps:
-      - name: Hello World
-        run: echo "Hello World"
+      - name: checkout
+        uses: actions/checkout@v4
+      
+      - name: run tests
+        run: ./gradlew test
 
