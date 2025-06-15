@@ -6,6 +6,9 @@ jobs:
   helloworld:
     runs-on: ubuntu-latest
     steps:
-      - name: Hello World
-        run: echo "Test test"
+      - name: Get a clone of the current repository
+        uses: actions/checkout@v4
+
+      - name: list all the files
+        run: ls
 
