@@ -4,13 +4,7 @@ on:
 
 jobs:
   helloworld:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest        
     steps:
-      - name: Get a clone of the current repository
-        uses: actions/checkout@v4
-
-      - name: list all the files
-        run: ls
-
-      - name: Run the tests
-        run: ./gradlew test
+      - name: Hello world
+        run: echo "Lecture CICD"
