@@ -8,3 +8,8 @@ jobs:
     steps:
       - name: Hello world
         run: echo "Lecture CICD"
+      - name: Get the present working directory
+        run: pwd 
+
+      - name: List all the files
+        run : ls
