@@ -12,4 +12,8 @@ jobs:
 
       - name : list all the files
         run : ls    #To run a shell command
-        
+
+      - name : RUn the tests 
+        run : ./gradlew test
+
+
